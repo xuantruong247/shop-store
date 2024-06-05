@@ -1,5 +1,5 @@
 import getBillboard from "@/actions/get-billboard";
-import getProduct from "@/actions/get-product";
+import getProducts from "@/actions/get-products";
 import Billboard from "@/components/billboard";
 import ProductList from "@/components/porduct-list";
 import Container from "@/components/ui/container";
@@ -7,7 +7,7 @@ import Container from "@/components/ui/container";
 export const revalidate = 0;
 
 const HomePage = async () => {
-  const products = await getProduct({
+  const products = await getProducts({
     isFeatured: true,
     categoryId: "",
     colorId: "",
